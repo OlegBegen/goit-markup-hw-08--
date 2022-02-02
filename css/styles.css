@@ -606,7 +606,7 @@ textarea {
   margin: 0;
 }
 
-/* ---------------------соцмережі працівників------------------------------ */
+/* ---------------------СОЦІАЛЬНІ МЕРЕЖІ------------------------------------ */
 
 .social-networks {
   width: 206px;
@@ -800,24 +800,18 @@ textarea {
 }
 
 /* ------------------------------PORTFOLIO-------------------------------------- */
-/* стилізація портфоліо */
 
-.portf-main {
+.page-portfolio {
   background-color: var(--background-heder-);
 }
 
-.button-general {
+.page-portfolio__filter {
+  display: flex;
   padding-top: 94px;
   padding-left: 295px;
-}
-.portf-button {
-  display: flex;
-
-  padding-left: 0;
   margin-right: 8px;
 }
-
-.button-list {
+.page-portfolio__button {
   background-color: var(--background-portf-button);
   color: var(--color-general-);
   font-weight: 500;
@@ -834,30 +828,32 @@ textarea {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-item:not(:last-child) {
+.page-portfolio__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.button-list:hover,
-.button-list:focus {
+.page-portfolio__button:hover,
+.page-portfolio__button:focus {
   background-color: var(--background-button-);
   color: var(--background-heder-);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   cursor: pointer;
 }
-
-.project {
+/* ----------------------------ПРОТУКТИ-------------------------------------- */
+.page-portfolio__project {
   margin-top: 34px;
   margin-bottom: 94px;
 }
-.portf-project {
+.portfilio-list {
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-general {
+/* project-general --->page-portfolio__card  */
+
+.project {
   width: 369px;
   background-color: var(--background-heder-);
   border: 1px solid #eeeeee;
@@ -865,23 +861,23 @@ textarea {
   margin-bottom: 30px;
   margin-right: 30px;
 }
-.project-general:hover,
-.project-general:focus {
+.project:hover,
+.project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
-.project-general:nth-child(3n) {
+.project:nth-child(3n) {
   margin-right: 0px;
 }
-.project-general:nth-last-child(-n + 3) {
+.project:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.product-general {
+.product-item {
   padding: 20px 24px;
   overflow: hidden;
 }
-.project-title {
+.project__title {
   color: var(--color-general-);
   font-weight: bold;
   font-size: 18px;
@@ -889,7 +885,7 @@ textarea {
   margin-bottom: 4px;
   margin-top: 0;
 }
-.product {
+.project__product {
   font-size: 16px;
   line-height: 1.88;
   margin: 0;
@@ -899,7 +895,7 @@ textarea {
   overflow: hidden;
 }
 
-.project-general:hover .produkt-overlay {
+.project:hover .produkt-overlay {
   transform: translateY(0);
 }
 
