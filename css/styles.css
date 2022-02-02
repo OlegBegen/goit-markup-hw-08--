@@ -1,7 +1,5 @@
 .list {
   list-style: none;
-  /* padding: 0;
-  margin: 0; */
 }
 a {
   text-decoration: none;
@@ -49,22 +47,26 @@ body {
   width: 1200px;
 }
 
-/* --------------------------------СТИЛІЗАЦІЯ ХЕДЕРА----------------------- */
-
 .section {
   max-width: 1600px;
   margin: 0 auto;
 }
+
+/* --------------------------------СТИЛІЗАЦІЯ ХЕДЕРА----------------------- */
+
 .header {
   background-color: var(--background-heder-);
   width: 100%;
+}
+.pege-header {
+  width: 1600 px;
+  border-bottom: solid 1px #ececec;
 }
 
 .page-header__navi {
   width: 1600 px;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #ececec;
 }
 
 .site-nav {
@@ -460,17 +462,19 @@ textarea {
   color: var(--color-second-);
 }
 
-/* стилізвція майн */
+/* -------------------------- MAIN------------------------стилізвція майн */
 
 .section {
   padding: 94px 0;
 }
 
 .section-mod {
+  padding: 94px 0;
   padding-bottom: 0;
   margin: 0 auto;
 }
-.site-we .we-title {
+
+.grid__title {
   color: var(--color-general-);
   font-weight: bold;
   font-size: 14px;
@@ -478,26 +482,26 @@ textarea {
   text-transform: uppercase;
 }
 
-.site-we {
+.grid {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
 }
 
-.site-we .we-text {
+.grid__text {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.we-item {
+.grid__item {
   width: 270px;
   padding-left: 0;
 }
-.we-item:not(:last-child) {
+.grid__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.we-item-icon {
+.grid__icon {
   width: 270px;
   height: 120px;
   background-color: var(--background-portf-button);
@@ -507,8 +511,9 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+/* _____________________________________________________________________ */
 
-.our-work {
+.work__title {
   color: var(--color-general-);
   font-weight: bold;
   font-size: 36px;
@@ -517,22 +522,22 @@ textarea {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.foto-work {
+.work__list {
   display: flex;
   padding-left: 0;
   margin: 0;
 }
-.foto-work .item:not(:last-child) {
+.work__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.product-our {
+.work__product {
   position: relative;
   width: 370px;
   height: 294px;
 }
 
-.work-title {
+.work__product-title {
   position: absolute;
   margin: 0;
   text-transform: uppercase;
@@ -548,12 +553,12 @@ textarea {
   bottom: 0;
 }
 
-/* стилізація команди */
+/* -------------------------стилізація команди----------------------------- */
 .comand {
   background-color: var(--background-portf-button);
   padding-top: 0;
 }
-.our-comand {
+.comand__title {
   color: var(--color-general-);
   font-weight: bold;
   font-size: 36px;
@@ -564,27 +569,27 @@ textarea {
   margin: 0;
 }
 
-.about-we {
+.comand__list {
   width: 270px;
   padding-left: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
-.about-we .item:not(:last-child) {
+.comand__item:not(:last-child) {
   margin-right: 30px;
 }
-.item-general {
+.person {
   background: var(--background-heder-);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.person-item {
+.person__item {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.name {
+.person__name {
   color: var(--color-general-);
   font-weight: 500;
   font-size: 16px;
@@ -593,7 +598,7 @@ textarea {
   margin: 0;
   padding-bottom: 10px;
 }
-.position {
+.person__position {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -601,20 +606,22 @@ textarea {
   margin: 0;
 }
 
-/* соцмережі працівників */
+/* ---------------------соцмережі працівників------------------------------ */
 
-.sotial-general {
+.social-networks {
   width: 206px;
   height: 44px;
   margin-top: 16px;
   margin-left: 32px;
+  margin-right: 32px;
 }
-.sotial-lincs {
+
+.social-networks__list {
   display: flex;
   justify-content: space-between;
   padding: 0;
 }
-.sotial-icon {
+.social-networks__icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -625,7 +632,7 @@ textarea {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-name {
+.social-networks__title {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -633,15 +640,15 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sotial-icon:hover,
-.sotial-icon:focus {
+.social-networks__icon:hover,
+.social-networks__icon:focus {
   background-color: var(--background-button-);
   color: var(--background-heder-);
 }
 
-/* наші клієнти */
+/* -------------------------наші клієнти------------------------------------- */
 
-.our-clients {
+.clients__title {
   color: var(--color-general-);
   font-weight: bold;
   font-size: 36px;
@@ -651,19 +658,19 @@ textarea {
   text-align: center;
   margin: 0;
 }
-.client {
+.clients {
   max-width: 1600px;
   margin: 0 auto;
   padding-bottom: 94px;
 }
-.clients {
+.clients__list {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
 
-.icons {
+.clients__icon {
   width: 169px;
   height: 91px;
   border: 1px solid #afb1b8;
@@ -675,8 +682,8 @@ textarea {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icons:hover,
-.icons:focus {
+.clients__icon:hover,
+.clients__icon:focus {
   fill: var(--background-button-);
   border: 1px solid var(--background-button-);
 }
@@ -725,18 +732,18 @@ textarea {
   color: var(--color-second-);
 }
 
-.futter-sotial {
+.page-footer__sotial {
   margin-right: 93px;
 }
 
-.to-us {
+.page-footer_title {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   color: var(--color-h1-);
   text-transform: uppercase;
 }
-.futter-sotial-item {
+.footer-sotial__item {
   padding: 0;
   margin: 0;
   width: 206px;
@@ -744,15 +751,15 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
-.futter-sotial-item .icon-name {
+.page-footer__social {
   fill: var(--color-h1-);
 }
-.futter-sotial-item .sotial-icon {
+.page-footer__social {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sotial-icon:hover,
-.sotial-icon:focus {
+.page-footer__social:hover,
+.page-footer__social:focus {
   background-color: var(--background-button-);
 }
 
