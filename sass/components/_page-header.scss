@@ -1,0 +1,130 @@
+.header {
+  background-color: var(--background-heder-);
+  width: 100%;
+}
+.pege-header {
+  width: 1600 px;
+  border-bottom: solid 1px #ececec;
+}
+
+.page-header__navi {
+  width: 1600 px;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  width: 294px;
+  height: 16px;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0;
+}
+
+.page-header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.site-nav__link {
+  position: relative;
+  color: var(--color-general-);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  padding: 32px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--color-second-);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.site-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-second-);
+  opacity: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav__link:hover::after,
+.site-nav__link:focus::after {
+  opacity: 1;
+}
+
+.header-contact {
+  display: flex;
+  width: 307px;
+  padding-left: 0;
+  margin-left: 331px;
+  justify-content: space-between;
+}
+
+.header-contact .a-link {
+  color: var(--color-text-);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--color-second-);
+  }
+}
+
+.a-link {
+  display: inline-flex;
+  align-items: center;
+}
+.header-contact__envelope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 161px;
+  height: 16px;
+  margin-right: 30px;
+  margin-left: -30px;
+  color: var(--color-text-);
+}
+.header-contact__phone {
+  display: flex;
+  align-items: center;
+  width: 142px;
+  height: 16px;
+}
+
+.phone-svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--color-text-);
+
+  .header-contact .a-link:hover &,
+  .header-contact .a-link:focus & {
+    fill: var(--color-second-);
+  }
+}
+
+.envelope-svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--color-text-);
+
+  .header-contact .a-link:hover &,
+  .header-contact .a-link:focus & {
+    fill: var(--color-second-);
+  }
+}

@@ -1,0 +1,53 @@
+.list {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+:root {
+  --color-general-: #212121;
+  --color-second-: #2196f3;
+  --color-h1-: #ffffff;
+  --color-text-: #757575;
+  --background-scond: #2f303a;
+  --background-button-: #2196f3;
+  --background-heder-: #ffffff;
+  --background-general: #e5e5e5;
+  --background-portf-button: #f5f4fa;
+}
+body {
+  background-color: var(--background-heder-);
+  color: var(--color-text-);
+  font-family: Roboto, sans-serif;
+}
+
+/* скритий текст */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 1200px;
+}
+
+.section {
+  max-width: 1600px;
+  margin: 0 auto;
+}

@@ -180,7 +180,7 @@ body {
   margin-left: -30px;
   color: var(--color-text-);
 }
-.header-contavt__phone {
+.header-contact__phone {
   display: flex;
   align-items: center;
   width: 142px;
@@ -253,6 +253,7 @@ body {
 }
 
 /* ---------Стилізація БЕКДРОП---------------------------------Backdrop */
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -554,6 +555,7 @@ textarea {
 }
 
 /* -------------------------стилізація команди----------------------------- */
+
 .comand {
   background-color: var(--background-portf-button);
   padding-top: 0;
