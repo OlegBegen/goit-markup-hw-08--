@@ -1,5 +1,7 @@
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -31,13 +33,14 @@ body {
 }
 
 .container {
+  width: 1200px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 1200px;
 }
 
 .section {
   max-width: 1600px;
   margin: 0 auto;
+  margin-top: 94px;
 }

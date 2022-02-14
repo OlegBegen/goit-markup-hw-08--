@@ -1,13 +1,9 @@
-.social-networks {
+.social-networks__list {
   width: 206px;
-  height: 44px;
+  display: flex;
   margin-top: 16px;
   margin-left: 32px;
   margin-right: 32px;
-}
-
-.social-networks__list {
-  display: flex;
   justify-content: space-between;
   padding: 0;
 }

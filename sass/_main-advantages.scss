@@ -1,0 +1,36 @@
+.grid {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__title {
+    color: var(--color-general-);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin: 0;
+    font-stretch: normal;
+  }
+  &__icon {
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-portf-button);
+    display: block;
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

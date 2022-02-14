@@ -1,6 +1,6 @@
 .comand {
   background-color: var(--background-portf-button);
-  padding-top: 0;
+  padding-bottom: 94px;
 
   &__title {
     color: var(--color-general-);
@@ -14,9 +14,6 @@
   }
 
   &__list {
-    width: 270px;
-    padding-left: 0;
-    margin: 0;
     display: flex;
     justify-content: space-between;
   }
