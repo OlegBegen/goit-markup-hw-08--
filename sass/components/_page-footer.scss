@@ -14,21 +14,16 @@
 }
 
 .page-footer__adress {
-  padding-top: 20px;
-}
-.adsress-styles {
   color: var(--color-h1-);
   font-weight: normal;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   padding-left: 0;
+  padding-top: 20px;
 }
 
-.contact {
-  padding-left: 0;
-  margin: 0;
-}
-.contact .cont-list {
+.footer-contact__list {
   color: var(--color-text-);
   font-weight: normal;
   font-size: 14px;
@@ -36,8 +31,9 @@
   padding-top: 9px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cont-list:hover,
-.cont-list:focus {
+
+.footer-contact__list:hover,
+.footer-contact__list:focus {
   color: var(--color-second-);
 }
 
@@ -49,6 +45,7 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
+  font-weight: bold;
   color: var(--color-h1-);
   text-transform: uppercase;
 }
@@ -59,11 +56,11 @@
   height: 44px;
   display: flex;
   justify-content: space-between;
-}
-.page-footer__social {
   fill: var(--color-h1-);
 }
-.page-footer__social {
+
+.page-footer--social {
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -73,7 +70,7 @@
   }
 }
 
-.rossylka input {
+.page-footer__email input {
   width: 358px;
   height: 50px;
   background: #2f303a;
@@ -87,7 +84,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.rossylka button {
+.page-footer__email button {
   position: relative;
   width: 200px;
   height: 50px;
