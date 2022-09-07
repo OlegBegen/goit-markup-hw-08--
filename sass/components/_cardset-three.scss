@@ -1,0 +1,47 @@
+.cardset-three {
+    @include min768 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+.cardset-three__card {
+    background-color: $bgPrimaryColor;
+    box-shadow: $teamCardShadow;
+    border-radius: 0px 0px 4px 4px;
+    @include max767 {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @include min768 {
+        flex-basis: calc(100% / 2 - 30px);
+        margin: 15px;
+    }
+    @include min1200 {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+}
+
+.cardset-three__box {
+    padding: 30px 30px 24px;
+    text-align: center;
+    @include min1200 {
+        padding: 30px 32px;
+    }
+}
+
+.cardset-three__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    margin-bottom: 10px;
+}
+
+.cardset-three__text {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    color: $textSecondaryColor;
+    margin-bottom: 16px;
+}

@@ -1,17 +1,34 @@
 .logo {
-  color: #2196f3;
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+    display: block;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: $accentColor;
+    @include min1200 {
+        font-size: 26px;
+        line-height: calc(31 / 26);
+    }
 }
-.logo-second {
-  color: #000000;
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+
+.header__logo {
+    padding: 16px 0 15px 0;
+    @include min768 {
+        padding: 26px 0 25px 0;
+        margin-right: 88px;
+    }
+    @include min1200 {
+        padding: 24px 0 24px 0;
+        margin-right: 93px;
+    }
+    &--color {
+        color: $textPrimaryColor;
+    }
 }
-.logo--footer {
-  color: var(--background-heder-);
+
+.footer__logo {
+    margin-bottom: 20px;
+    &--color {
+        color: $footerPrimaryTextColor;
+    }
 }

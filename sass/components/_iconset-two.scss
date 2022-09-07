@@ -1,0 +1,39 @@
+.iconset-two {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.iconset-two__item {
+    margin: 15px;
+    @include max767 {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+    @include min768 {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+    @include min1200 {
+        flex-basis: calc(100% / 6 - 30px);
+    }
+}
+
+.iconset-two__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid $iconsPrimaryColor;
+    border-radius: 4px;
+    color: $iconsPrimaryColor;
+    transition: color $mainTransition, border-color $mainTransition;
+    &:hover,
+    &:focus {
+        border-color: $accentColor;
+        color: $accentColor;
+    }
+}
+
+.iconset-two__icon {
+    display: block;
+    fill: currentColor;
+}
